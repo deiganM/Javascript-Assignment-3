@@ -63,7 +63,6 @@ submitButton.addEventListener('click', (e) => {
   playerPlanet()
   playerStarship()
   playerSpecies()
-  console.log(e)
 })
 
 
