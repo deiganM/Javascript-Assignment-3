@@ -12,16 +12,23 @@
 //     background.style.color = 'lime'
 //   }
 // })
- const myTextIuput = document.querySelector('#name')
- console.log(myTextIuput.value)
+
+// function that takes player name from input and writes it to page
+
+const getPlayerName = () => {
+  const myTextInput = document.querySelector('#name')
+  playerName.innerHTML = myTextInput.value
+}
 
 // //////////////////////////////
 
-let randoNum = function(topNum, bottomNum) {
+// random number function
+// I JUST CHANGED THIS TO AN ARROW FUNCTION, IF THERE IS AN ISSUE
+let randoNum = (topNum, bottomNum) => {
   return Math.floor(Math.random() * topNum + bottomNum)
 }
 
-
+// random planet function, writes to page
 const playerPlanet = () => {
   const planet = `https://swapi.co/api/planets/${randoNum(61, 1)}`
   fetch(planet)
@@ -35,7 +42,7 @@ const playerPlanet = () => {
   })
 }
 
-
+// random starship function, writes to page
 const playerStarship = () => {
   const starship = `https://swapi.co/api/starships/${randoNum(15, 2)}`
   fetch(starship)
@@ -49,6 +56,7 @@ const playerStarship = () => {
   })
 }
 
+// random species function, writes to page
 const playerSpecies = () => {
   const species = `https://swapi.co/api/species/${randoNum(15, 2)}`
   fetch(species)
@@ -62,10 +70,12 @@ const playerSpecies = () => {
   })
 }
 
+getPlayerName()
+playerPlanet()
+playerStarship()
+playerSpecies()
 
-// playerPlanet()
-// playerStarship()
-// playerSpecies()
+
 
 
 
