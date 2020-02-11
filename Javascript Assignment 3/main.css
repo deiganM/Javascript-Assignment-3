@@ -25,6 +25,17 @@ body {
   font-family: 'Star Jedi', arial;
 }
 
+.player-info {
+  border: 1px white solid;
+  height: 50vh;
+  width: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: auto;
+}
+
 footer {
   display: flex;
   justify-content: center;

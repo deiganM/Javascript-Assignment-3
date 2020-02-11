@@ -4,6 +4,14 @@
 //   name.innerHTML = data.name
 // }
 
+// TEST ITEMS
+
+
+ 
+
+
+// //////////////////////////////
+
 let randoNum = function(topNum, bottomNum) {
   return Math.floor(Math.random() * topNum + bottomNum)
 }
@@ -14,7 +22,11 @@ const playerPlanet = () => {
   fetch(planet)
     .then(x => x.json())
     .then(data => {
-      console.log(data.name) 
+      const myPlanet = document.querySelector('#planet')
+      myPlanet.innerHTML = data.name
+      if (data.name === undefined) {
+        myPlanet.innerHTML = "Something went wrong."
+      }
   })
 }
 
@@ -24,7 +36,11 @@ const playerStarship = () => {
   fetch(starship)
     .then(x => x.json())
     .then(data => {
-      console.log(data.name)  
+      const myStarShip = document.querySelector('#starShip')
+      myStarShip.innerHTML = data.name
+      if (data.name === undefined) {
+        myStarShip.innerHTML = "Something went wrong."
+      }
   })
 }
 
@@ -33,7 +49,11 @@ const playerSpecies = () => {
   fetch(species)
     .then(x => x.json())
     .then(data => {
-      console.log(data.name)
+      const mySpecies = document.querySelector('#species')
+      mySpecies.innerHTML = data.name
+      if (data.name === undefined) {
+        mySpecies.innerHTML = "Something went wrong."
+      }
   })
 }
 
