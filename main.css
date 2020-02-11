@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+@font-face {
+  font-family: 'starwars';
+  src: url('StarJediLogoDoubleline1-z0e0.ttf');
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+h1 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  color: rgb(255, 232, 31);
+}
+
+h2 {
+  color: rgb(255, 255, 255);
+  font-family: 'Open Sans', sans-serif;
+}
+
+p {
+  color: rgb(109, 188, 237);
+  font-family: 'Open Sans', sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 17vh;
+}
+
+html {
+  background-image: url('DeathStar.jpg');
+  background-position: center;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input#name {
+  display: block;
+  text-align: center;
+  margin: 1rem auto;
+}
+
+#submit {
+  width: max-content;
+  margin-bottom: 1rem;
+}
+
+.player-info {
+  border: 2px whitesmoke solid;
+  border-radius: 5px;
+  height: 50vh;
+  width: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: auto;
+  text-align: center;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 14vh;
+  font-size: 12px;
+}
+
