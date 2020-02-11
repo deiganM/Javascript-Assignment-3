@@ -6,9 +6,14 @@
 
 // TEST ITEMS
 
-
- 
-
+// const submit = document.querySelector('#submit')
+// submit.addEventListener('click', () => {
+//   if (name.value !== '') {
+//     background.style.color = 'lime'
+//   }
+// })
+ const myTextIuput = document.querySelector('#name')
+ console.log(myTextIuput.value)
 
 // //////////////////////////////
 
@@ -25,7 +30,7 @@ const playerPlanet = () => {
       const myPlanet = document.querySelector('#planet')
       myPlanet.innerHTML = data.name
       if (data.name === undefined) {
-        myPlanet.innerHTML = "Something went wrong."
+        myPlanet.innerHTML = "Oops. Something went wrong. Please Reload."
       }
   })
 }
@@ -39,7 +44,7 @@ const playerStarship = () => {
       const myStarShip = document.querySelector('#starShip')
       myStarShip.innerHTML = data.name
       if (data.name === undefined) {
-        myStarShip.innerHTML = "Something went wrong."
+        myStarShip.innerHTML = "Oops. Something went wrong. Please Reload."
       }
   })
 }
@@ -52,15 +57,15 @@ const playerSpecies = () => {
       const mySpecies = document.querySelector('#species')
       mySpecies.innerHTML = data.name
       if (data.name === undefined) {
-        mySpecies.innerHTML = "Something went wrong."
+        mySpecies.innerHTML = "Oops. Something went wrong. Please Reload."
       }
   })
 }
 
 
-playerPlanet()
-playerStarship()
-playerSpecies()
+// playerPlanet()
+// playerStarship()
+// playerSpecies()
 
 
 
