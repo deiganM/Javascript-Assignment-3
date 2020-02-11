@@ -1,29 +1,14 @@
-// writes a name to the screen
-// function name() {
-//   const name = document.querySelector('#name')
-//   name.innerHTML = data.name
-// }
 
-// TEST ITEMS
-
-// const submit = document.querySelector('#submit')
-// submit.addEventListener('click', () => {
-//   if (name.value !== '') {
-//     background.style.color = 'lime'
-//   }
-// })
+////////// FUNCTIONS //////////
 
 // function that takes player name from input and writes it to page
-
 const getPlayerName = () => {
   const myTextInput = document.querySelector('#name')
   playerName.innerHTML = myTextInput.value
+  myTextInput.value = ""
 }
 
-// //////////////////////////////
-
 // random number function
-// I JUST CHANGED THIS TO AN ARROW FUNCTION, IF THERE IS AN ISSUE
 let randoNum = (topNum, bottomNum) => {
   return Math.floor(Math.random() * topNum + bottomNum)
 }
@@ -70,10 +55,22 @@ const playerSpecies = () => {
   })
 }
 
-getPlayerName()
-playerPlanet()
-playerStarship()
-playerSpecies()
+const submitButton = document.querySelector('#submit')
+
+submitButton.addEventListener('click', (e) => {
+  e.preventDefault()
+  getPlayerName()
+  playerPlanet()
+  playerStarship()
+  playerSpecies()
+  console.log(e)
+})
+
+
+
+
+
+
 
 
 
