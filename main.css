@@ -55,11 +55,17 @@ input#name {
   display: block;
   text-align: center;
   margin: 1rem auto;
+  border: none;
+  border-radius: 5px;
+  padding: .4rem;
 }
 
 #submit {
   width: max-content;
   margin-bottom: 1rem;
+  background: darkslategrey;
+  padding: .4rem;
+  cursor: pointer;
 }
 
 .player-info {
